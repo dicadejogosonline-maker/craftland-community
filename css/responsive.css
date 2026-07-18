@@ -1,0 +1,504 @@
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Mobile Devices (320px and up) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar-container {
+        padding: 1rem;
+    }
+
+    .navbar-logo h1 {
+        font-size: 22px;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--secondary-bg);
+        gap: 0;
+        padding: 1rem;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-graphic {
+        font-size: 80px;
+    }
+
+    /* Explore Page */
+    .explore-container {
+        padding: 1rem;
+    }
+
+    .explore-header h1 {
+        font-size: 28px;
+    }
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .category-select {
+        min-width: 100%;
+    }
+
+    /* Maps Grid */
+    .maps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Publish Page */
+    .publish-container {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 8px;
+    }
+
+    .publish-container h1 {
+        font-size: 24px;
+    }
+
+    /* Profile Page */
+    .profile-header {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .profile-avatar-section {
+        margin-bottom: 1rem;
+    }
+
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+
+    /* Map Detail Modal */
+    .modal-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+
+    .map-detail-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .map-detail-image {
+        height: 300px;
+    }
+
+    .map-detail-info h1 {
+        font-size: 24px;
+    }
+
+    /* Admin Page */
+    .admin-container {
+        padding: 1rem;
+    }
+
+    .admin-tabs {
+        flex-direction: column;
+    }
+
+    .admin-tab {
+        width: 100%;
+        border-bottom: none;
+        border-left: 3px solid transparent;
+        padding: 0.75rem 1rem;
+    }
+
+    .admin-tab.active {
+        border-bottom: none;
+        border-left-color: var(--accent-gold);
+        background: rgba(245, 158, 11, 0.1);
+    }
+
+    .admin-map-card {
+        padding: 1rem;
+    }
+
+    .admin-actions {
+        flex-direction: column;
+    }
+
+    .admin-actions .btn {
+        width: 100%;
+        min-width: auto;
+    }
+
+    /* Ranking Page */
+    .ranking-tabs {
+        flex-direction: column;
+    }
+
+    .ranking-tab {
+        width: 100%;
+        border-bottom: none;
+        border-left: 3px solid transparent;
+    }
+
+    .ranking-tab.active {
+        border-bottom: none;
+        border-left-color: var(--accent-gold);
+    }
+
+    .ranking-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ranking-score {
+        text-align: left;
+    }
+
+    /* Dashboard Stats */
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Map Actions */
+    .map-actions {
+        flex-direction: column;
+    }
+
+    .map-actions .btn {
+        width: 100%;
+    }
+
+    /* Room ID Display */
+    .room-id-display {
+        flex-direction: column;
+    }
+
+    /* Form */
+    .form-input, .form-select, .form-textarea, .form-input-file {
+        padding: 0.75rem;
+    }
+
+    /* Auth Box */
+    .auth-container {
+        max-width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .auth-box {
+        padding: 1.5rem;
+    }
+
+    .auth-tabs {
+        flex-direction: column;
+    }
+
+    .auth-tab {
+        width: 100%;
+    }
+}
+
+/* Tablet Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Maps Grid */
+    .maps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    /* Ranking */
+    .ranking-item {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    /* Map Detail Modal */
+    .map-detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-detail-image {
+        height: 300px;
+    }
+
+    /* Dashboard Stats */
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Desktop (1025px and up) */
+@media (min-width: 1025px) {
+    /* Maps Grid */
+    .maps-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    /* Dashboard Stats */
+    .dashboard-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Extra Large Desktop (1400px and up) */
+@media (min-width: 1400px) {
+    .maps-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+/* Small Mobile (320px to 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar-logo h1 {
+        font-size: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-graphic {
+        font-size: 60px;
+    }
+
+    .map-card-title {
+        font-size: 16px;
+    }
+
+    .map-card-description {
+        font-size: 12px;
+    }
+
+    .explore-header h1 {
+        font-size: 22px;
+    }
+
+    .auth-box {
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 14px;
+    }
+
+    .publish-container h1 {
+        font-size: 20px;
+    }
+
+    .modal-content {
+        width: 98%;
+    }
+
+    .map-detail-info h1 {
+        font-size: 20px;
+    }
+
+    .ranking-position {
+        font-size: 24px;
+        min-width: 40px;
+    }
+
+    .ranking-score-value {
+        font-size: 24px;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .comment-text {
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+}
+
+/* Portrait Orientation for Mobile */
+@media (max-width: 768px) and (orientation: portrait) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .map-detail-container {
+        padding: 1rem;
+    }
+
+    .profile-header {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-graphic {
+        font-size: 60px;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-container {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-bg: #0a0a0a;
+        --secondary-bg: #1a1a2e;
+        --tertiary-bg: #16213e;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .admin-actions,
+    .map-actions,
+    .add-comment,
+    .add-review {
+        display: none;
+    }
+
+    .page {
+        display: block !important;
+        page-break-after: always;
+    }
+
+    .modal-content {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
+
+/* High DPI Displays */
+@media (min-resolution: 2dppx) {
+    .loader {
+        border-width: 2px;
+        border-top-width: 2px;
+    }
+
+    .hamburger span {
+        height: 2px;
+    }
+}
+
+/* Hover Capability */
+@media (hover: hover) {
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .map-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .nav-link::after {
+        width: 0;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        padding: 1rem 2rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .map-card {
+        cursor: pointer;
+    }
+}
